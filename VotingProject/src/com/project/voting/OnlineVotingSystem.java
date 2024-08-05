@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class OnlineVotingSystem {
 	
+	//Class-level variables to maintain vote counts
+	private static int AndhraPartyVotes = 0;
+	private static int PrajaPartyVotes = 0;
+	
 	public void Election() {
 		Scanner sc = new Scanner(System.in);
 		
@@ -14,11 +18,7 @@ public class OnlineVotingSystem {
 		//get the user Age
 		System.out.println("Enter your age: ");
 		int age = sc.nextInt();
-		
-		//initialize variables to keep track vote count
-		int AndhraPartyVotes = 0;
-		int PrajaPartyVotes = 0;
-		
+		 
 		//check the eligibility
 		if(age >= 18) {
 			
